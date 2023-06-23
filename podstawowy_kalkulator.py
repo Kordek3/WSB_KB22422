@@ -10,6 +10,7 @@ def kalkulator():
     print("2. Odejmowanie")
     print("3. Mnożenie")
     print("4. Pole kwadratu")
+    print("5. Pole trójkąta")
     print("0. Wyjście")
 
 
@@ -35,6 +36,11 @@ def kalkulator():
             bok = float(input("Podaj długość boku kwadratu: "))
             wynik = pole_kwadratu(bok)
             print("Pole kwadratu: ", wynik)
+        elif wybor == '5':
+            podstawa = float(input("Podaj długość podstawy trójkąta: "))
+            wysokosc = float(input("Podaj wysokość trójkąta: "))
+            wynik = pole_trojkata(podstawa, wysokosc)
+            print("Pole trójkąta: ", wynik)
         elif wybor == '0':
             print("Do widzenia!")
             break
