@@ -39,3 +39,7 @@ print("\n")
 print("Skład PSG:")
 for pozycja in sklad_psg:
     print("{:<5} {:<20} {:<10}".format(pozycja[0], pozycja[1], pozycja[2]))
+
+# Wypisanie wyniku meczu
+print("Wynik meczu: {}".format(wynik_meczu))
+print("\n")
