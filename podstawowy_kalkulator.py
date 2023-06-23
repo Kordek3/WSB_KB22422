@@ -8,7 +8,9 @@ def kalkulator():
     print("Wybierz operację:")
     print("1. Dodawanie")
     print("2. Odejmowanie")
+    print("3. Mnożenie")
     print("0. Wyjście")
+
 
     while True:
         wybor = input("Twój wybór: ")
@@ -22,6 +24,11 @@ def kalkulator():
             liczba1 = float(input("Podaj pierwszą liczbę: "))
             liczba2 = float(input("Podaj drugą liczbę: "))
             wynik = odejmowanie(liczba1, liczba2)
+            print("Wynik: ", wynik)
+        elif wybor == '3':
+            liczba1 = float(input("Podaj pierwszą liczbę: "))
+            liczba2 = float(input("Podaj drugą liczbę: "))
+            wynik = mnozenie(liczba1, liczba2)
             print("Wynik: ", wynik)
         elif wybor == '0':
             print("Do widzenia!")
