@@ -9,6 +9,7 @@ def kalkulator():
     print("1. Dodawanie")
     print("2. Odejmowanie")
     print("3. Mnożenie")
+    print("4. Pole kwadratu")
     print("0. Wyjście")
 
 
@@ -30,6 +31,10 @@ def kalkulator():
             liczba2 = float(input("Podaj drugą liczbę: "))
             wynik = mnozenie(liczba1, liczba2)
             print("Wynik: ", wynik)
+        elif wybor == '4':
+            bok = float(input("Podaj długość boku kwadratu: "))
+            wynik = pole_kwadratu(bok)
+            print("Pole kwadratu: ", wynik)
         elif wybor == '0':
             print("Do widzenia!")
             break
